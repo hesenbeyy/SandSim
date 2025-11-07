@@ -42,6 +42,9 @@ int main() {
 				if (event.key.code == sf::Keyboard::R) {
 					sand_sim.reset();
 				}
+				if (event.key.code == sf::Keyboard::E) {
+					sand_sim.randomInit();
+				}
 			}
 		}
 

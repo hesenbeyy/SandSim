@@ -27,10 +27,10 @@ void Sand::drawSand(sf::RenderWindow& window) {
 	for (int y = 0; y < HEIGHT / CELL_SIZE; y++) {
 		for (int x = 0; x < WIDTH / CELL_SIZE; x++) {
 			if (sandData[y][x]) {
-				float t = clock.getElapsedTime().asSeconds();
-				sf::Uint8 red = 128 + 127 * sin(t + y * 0.1f);
-				sf::Uint8 green = 128 + 127 * sin(t + x * 0.1f);
-				sf::Uint8 blue = 128 + 127 * sin(t + (x + y) * 0.1f);
+				float ratio = float(y) / (HEIGHT / CELL_SIZE); // 0 at top, 1 at bottom
+				sf::Uint8 red = 255 * ratio;
+				sf::Uint8 green = 200 * (1 - ratio);
+				sf::Uint8 blue = 50 + 205 * sin(ratio * 3.14);
 
 				sf::RectangleShape sand_rect(sf::Vector2f(CELL_SIZE,CELL_SIZE));
 				sand_rect.setFillColor(sf::Color::Color(red, green, blue, 255));

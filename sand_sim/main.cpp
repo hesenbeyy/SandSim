@@ -15,8 +15,8 @@ int main() {
 
 	//sf::RectangleShape rect(sf::Vector2f(CELL_SIZE, CELL_SIZE));
 	//sf::Clock clock;
-	const float frameDelay = 0.02f;
-	sand_sim.randomInit();
+	//const float frameDelay = 0.02f;
+	//sand_sim.randomInit();
 
 
 	while (window.isOpen()) {

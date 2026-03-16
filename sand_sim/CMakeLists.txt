@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(SFML 2.6 COMPONENTS graphics window system REQUIRED)
 
 # 2. Identify Source Files
-set(SOURCES main.cpp funcs.cpp macros.hpp)
+set(SOURCES main.cpp funcs.cpp)
 
 # 3. Create the Executable
 add_executable(${PROJECT_NAME} ${SOURCES})

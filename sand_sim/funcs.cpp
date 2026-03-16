@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "macros.hpp"
 #include <cstdlib>
+#include <cmath>
 
 
 
@@ -33,7 +34,7 @@ void Sand::drawSand(sf::RenderWindow& window) {
 				sf::Uint8 blue = 50 + 205 * sin(ratio * 3.14);
 
 				sf::RectangleShape sand_rect(sf::Vector2f(CELL_SIZE,CELL_SIZE));
-				sand_rect.setFillColor(sf::Color::Color(red, green, blue, 255));
+				sand_rect.setFillColor(sf::Color(red, green, blue, 255));
 				sand_rect.setPosition(sf::Vector2f(x * CELL_SIZE, y * CELL_SIZE));
 				window.draw(sand_rect);
 			}

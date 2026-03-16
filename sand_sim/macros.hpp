@@ -20,7 +20,7 @@
 
 #define WIDTH 800
 #define HEIGHT 600
-#define CELL_SIZE 5
+#define CELL_SIZE 10
 
 class Sand {
 public:

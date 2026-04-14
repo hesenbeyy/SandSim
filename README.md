@@ -67,9 +67,11 @@ git clone https://github.com/hesenbeyy/SandSim
 1. Install [SFML](https://www.sfml-dev.org/download.php) and [CMake](https://cmake.org/download/).
 2. Open a terminal (PowerShell or CMD) in the project folder:
 ```powershell
-mkdir build
-cd build
-cmake ..
+# Create build directory
+cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -G "Visual Studio 18 2026"
+
+# Compile
+cmake --build build --config Release
 
 ```
 

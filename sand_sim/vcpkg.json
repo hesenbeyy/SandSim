@@ -1,0 +1,11 @@
+{
+  "name": "maze-gen-solve",
+  "version-string": "1.0.0",
+  "dependencies": [
+    {
+      "name": "sfml",
+      "version>=": "2.6.1"
+    }
+  ],
+  "builtin-baseline": "364921666f7766324d089d71686c52709282713a"
+}
